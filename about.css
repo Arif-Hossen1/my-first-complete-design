@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #F5F5F5;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px  80px;
+    align-items: center;
+    padding: 10px 0px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: -20px;    
+}
+.logo-pic{
+    height: 80px;
+    width: 100px;
+    cursor: pointer;
+}
+.logo a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* margin-left: -10px; */
+}
+.link{
+    display: flex;
+}
+.link a{
+    text-decoration: none;
+    color: #9c9b9b;
+    margin-left: 10px;
+}
+.link a:focus{
+    color: #A76E43;
+}
+/* Start Here Mobile Menu Section */
+.mobile-icon{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding: 10px;
+}
+.mobile-ic{
+    height: 6px;
+    width: 30px;
+    border-radius: 7px;
+    background-color: black;
+}
+.mobile-link{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    white-space: nowrap;
+    top: 40px;
+    left: -80px;
+}
+.mobile-link a{
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    color: #9c9b9b;
+}
+.mobile-link a:focus{
+    color: #A76E43;
+}
+.mobile-icon:hover .mobile-link{
+    display: flex;
+}
+@media (max-width:920px){
+    .mobile-icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .nav{
+        margin: 0px 0px;
+    }
+}
+@media (min-width:921px){
+    .mobile-icon{
+        display: none;
+    }
+    .link{
+        display: flex;
+    }
+    .nav{
+        margin: 0px 80px;
+    }
+}
+/* End Here Navigation Bar */
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+}
+.txt h1{
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.txt p{
+    max-width: 61vw;
+    color: #9c9b9b;
+    line-height: 30px;
+    text-align: center;
+
+}
+.hero img{
+    height: 100vh;
+    width: 100%;
+}
+.process{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+}
+.process h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.process p{
+    max-width: 61vw;
+    color: #9c9b9b;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.parent{
+    background-color: #DBDBDB;
+    display: flex;
+    flex-direction: column;
+}
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    max-width: 24.7vw;
+    height: 60vh;
+}
+.child-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25vw;
+    padding: 40px;
+}
+.child-txt h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.child-txt p{
+    text-align: center;
+    color: #9c9b9b;
+}
+@media (max-width:800px){
+    .child{
+        display: flex;
+        flex-direction: column;
+    }
+    .child img{
+        max-width: 100%;
+        height: 60vh;
+        margin: 0px;
+    }
+    .child-txt{
+        max-width: 100vw;
+    }
+   
+}
+/* About Section End Here */
+.quality{
+    margin: 50px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quality h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.quality p{
+    max-width: 80vw;
+    text-align: center;
+    color: #9c9b9b;
+    margin-bottom: 40px;
+    line-height: 30px;
+
+}
+/* End Here Quality Section */
+.first-footer{
+    background-color: black;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-footer h3{
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 40vw;
+    transition: all 0.5s ease-in-out;
+    padding: 0px 0px;
+}
+.first-footer h3 span{
+    font-size: 2.5rem;
+}
+.first-footer a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    margin-top: 40px;
+}
+.first-footer a:hover{
+    color: #A76E43;
+}
+.social{
+    display: flex;
+    margin: 80px ;
+    justify-content: space-between;
+}
+.social-cls a i{
+    color: black;
+}
+@media (max-width:800px){
+    .first-footer h3{
+    max-width: 100vw;
+    }
+}
